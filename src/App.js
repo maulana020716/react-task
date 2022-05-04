@@ -1,39 +1,37 @@
-import Header from "./components/Header";
-import Tasks from "./components/Tasks";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Search from "./components/Search";
+import Carousels from "./components/Carousels";
+import Filter from "./components/Filter";
+
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
     const getTasks = async () => {
-      const tasksFromServer = await fetchTasksSearch();
-      setTasks(tasksFromServer);
+      const res = await fetch("http://localhost:5000/tasks");
+      const data = await res.json();
+      setTasks(data);
     };
     getTasks();
   }, []);
 
-  const fetchTasks = async () => {
-    const res = await fetch("http://localhost:5000/tasks?q=Doc");
-    const data = await res.json();
-    return data;
-  };
-
   const fetchTasksSearch = async (text) => {
-    if (text === null || text === "") {
+    if (typeof text === "undefined" || text === "") {
       const res = await fetch("http://localhost:5000/tasks");
       const data = await res.json();
-      return data;
+      setTasks(data);
     } else {
       const res = await fetch(`http://localhost:5000/tasks?q=${text}`);
       const data = await res.json();
       console.log(text);
-      return data;
+      setTasks(data);
     }
   };
 
@@ -53,9 +51,6 @@ function App() {
     });
     const data = await res.json();
     setTasks([...tasks, data]);
-    // const id = Math.floor(Math.random() * 10000) + 1;
-    // const newTask = { id, ...task };
-    // setTasks([...tasks, newTask]);
   };
 
   const deleteTask = async (id) => {
@@ -79,24 +74,26 @@ function App() {
     const data = await res.json();
     setTasks(
       tasks.map((task) =>
-        task.id === id ? { ...task, reminder: !task.reminder } : task
+        task.id === id ? { ...task, reminder: data.reminder } : task
       )
     );
   };
   return (
     <Router>
       <div className="container">
-        <Header
+        {/* <Header
           title="Hello"
           onAdd={() => setShowAddTask(!showAddTask)}
           showAdd={showAddTask}
-        />
+        /> */}
         <Routes>
           <Route
             path="/"
             element={
               <>
                 <Search onChangeVal={fetchTasksSearch} />
+                <Carousels />
+                <Filter />
                 {showAddTask && <AddTask onAdd={addTask} />}
                 {tasks.length > 0 ? (
                   <Tasks

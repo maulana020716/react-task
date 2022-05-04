@@ -10,19 +10,7 @@
       "id": 2,
       "text": "Meeeting",
       "day": "Feb 5th at 2:30pm",
-      "reminder": false
-    },
-    {
-      "text": "teasd",
-      "day": "asdsad",
-      "reminder": false,
-      "id": 3
-    },
-    {
-      "text": "asdasd",
-      "day": "asdasd",
-      "reminder": true,
-      "id": 4
+      "reminder": true
     }
   ]
 }

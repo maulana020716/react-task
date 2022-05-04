@@ -1,18 +1,13 @@
-import React from "react";
-
+import { FormControl, InputGroup } from "react-bootstrap";
 const Search = ({ onChangeVal }) => {
   return (
-    <form className="add-form">
-      <div className="form-control">
-        <label>Search</label>
-        <input
-          type="text"
-          placeholder="Search"
-          onChange={(e) => onChangeVal(e.target.value)}
-        />
-      </div>
-      <input type="submit" value="Save Task" className="btn btn-block" />
-    </form>
+    <InputGroup className="mb-3">
+      <FormControl
+        placeholder="Search"
+        aria-label="Search"
+        onChange={(e) => onChangeVal(e.target.value)}
+      />
+    </InputGroup>
   );
 };
 
