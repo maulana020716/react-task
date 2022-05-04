@@ -1,16 +1,932 @@
 {
-  "tasks": [
+  "products": [
     {
       "id": 1,
-      "text": "Doctors appointment",
-      "day": "Feb 5th at 2:30pm",
-      "reminder": true
+      "name": "Bulldozer",
+      "detail": "5 - Metals",
+      "price": 194223,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
     },
     {
       "id": 2,
-      "text": "Meeeting",
-      "day": "Feb 5th at 2:30pm",
-      "reminder": true
+      "name": "Grader",
+      "detail": "10-240 - Grilles and Screens",
+      "price": 549552,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 3,
+      "name": "Trencher",
+      "detail": "2-822 - Ornamental Metal Fences and Gates",
+      "price": 561591,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Wall"
+    },
+    {
+      "id": 4,
+      "name": "Scraper",
+      "detail": "10-500 - Lockers",
+      "price": 733556,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 5,
+      "name": "Compactor",
+      "detail": "1-013 - Project Coordinator",
+      "price": 509017,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 6,
+      "name": "Excavator",
+      "detail": "1-700 - Execution Requirements",
+      "price": 507317,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Wall"
+    },
+    {
+      "id": 7,
+      "name": "Skid-Steer",
+      "detail": "9-400 - Terrazzo",
+      "price": 941975,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 8,
+      "name": "Grader",
+      "detail": "2-500 - Utility Services",
+      "price": 729304,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 9,
+      "name": "Skid-Steer",
+      "detail": "2-300 - Earthwork",
+      "price": 638499,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 10,
+      "name": "Skid-Steer",
+      "detail": "11-070 - Instrumental Equipment",
+      "price": 143646,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 11,
+      "name": "Backhoe",
+      "detail": "13-120 - Pre-Engineered Structures",
+      "price": 112613,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 12,
+      "name": "Grader",
+      "detail": "4-500 - Refractories",
+      "price": 998696,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 13,
+      "name": "Grader",
+      "detail": "1-740 - Cleaning",
+      "price": 934717,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 14,
+      "name": "Trencher",
+      "detail": "3-600 - Grouts",
+      "price": 815382,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 15,
+      "name": "Bulldozer",
+      "detail": "1-000 - Purpose",
+      "price": 450440,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 16,
+      "name": "Trencher",
+      "detail": "1-011 - Project Engineer",
+      "price": 104407,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 17,
+      "name": "Scraper",
+      "detail": "3-540 - Cementitious Underlayments",
+      "price": 35258,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 18,
+      "name": "Backhoe",
+      "detail": "1-904 - Hazardous Materials Removal and Disposal",
+      "price": 826496,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 19,
+      "name": "Dragline",
+      "detail": "3-400 - Precast Concrete",
+      "price": 857501,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 20,
+      "name": "Compactor",
+      "detail": "11-110 - Commercial Laundry and Dry Cleaning Equipment",
+      "price": 775769,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 21,
+      "name": "Bulldozer",
+      "detail": "2-000 - General",
+      "price": 131289,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Framing"
+    },
+    {
+      "id": 22,
+      "name": "Trencher",
+      "detail": "11 - Equipment",
+      "price": 152462,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 23,
+      "name": "Excavator",
+      "detail": "1-514 - Temporary Heating, Cooling and Ventilation",
+      "price": 714825,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Wall"
+    },
+    {
+      "id": 24,
+      "name": "Trencher",
+      "detail": "5 - Metals",
+      "price": 659782,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 25,
+      "name": "Crawler",
+      "detail": "10-100 - Visual Display Boards",
+      "price": 529320,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Electrical"
+    },
+    {
+      "id": 26,
+      "name": "Scraper",
+      "detail": "1-013 - Project Coordinator",
+      "price": 945734,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 27,
+      "name": "Crawler",
+      "detail": "16-800 - Sound and Video",
+      "price": 733738,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Shafts"
+    },
+    {
+      "id": 28,
+      "name": "Backhoe",
+      "detail": "10-550 - Postal Specialties",
+      "price": 17578,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 29,
+      "name": "Dump Truck",
+      "detail": "6-100 - Rough Carpentry",
+      "price": 966777,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 30,
+      "name": "Skid-Steer",
+      "detail": "2-924 - Sodding",
+      "price": 586107,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Wall"
+    },
+    {
+      "id": 31,
+      "name": "Dump Truck",
+      "detail": "15-950 - Testing, Adjusting, and Balancing",
+      "price": 869147,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Shafts"
+    },
+    {
+      "id": 32,
+      "name": "Bulldozer",
+      "detail": "16-400 - Low-Voltage Distribution",
+      "price": 126066,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 33,
+      "name": "Bulldozer",
+      "detail": "1-903 - Hazardous Materials Abatement",
+      "price": 835634,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 34,
+      "name": "Crawler",
+      "detail": "10-100 - Visual Display Boards",
+      "price": 192298,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 35,
+      "name": "Backhoe",
+      "detail": "16-700 - Communications",
+      "price": 184762,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Electrical"
+    },
+    {
+      "id": 36,
+      "name": "Crawler",
+      "detail": "3-050 - Concrete Subcontractor",
+      "price": 306560,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 37,
+      "name": "Scraper",
+      "detail": "17 - Markup and Contingency",
+      "price": 537937,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 38,
+      "name": "Dump Truck",
+      "detail": "17-020 - Insurance",
+      "price": 612870,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 39,
+      "name": "Dump Truck",
+      "detail": "12-050 - Fabrics",
+      "price": 47462,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 40,
+      "name": "Backhoe",
+      "detail": "4-400 - Stone",
+      "price": 454061,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 41,
+      "name": "Scraper",
+      "detail": "14-100 - Dumbwaiters",
+      "price": 68337,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 42,
+      "name": "Bulldozer",
+      "detail": "9 - Finishes",
+      "price": 989088,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 43,
+      "name": "Trencher",
+      "detail": "1 - General Requirements",
+      "price": 606179,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 44,
+      "name": "Scraper",
+      "detail": "11-660 - Observatory Equipment",
+      "price": 207888,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Electrical"
+    },
+    {
+      "id": 45,
+      "name": "Dragline",
+      "detail": "2-784 - Stone Unit Pavers",
+      "price": 319567,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Shafts"
+    },
+    {
+      "id": 46,
+      "name": "Trencher",
+      "detail": "13-700 - Security Access and Surveillance",
+      "price": 927533,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 47,
+      "name": "Bulldozer",
+      "detail": "2-919 - Topsoil",
+      "price": 565790,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 48,
+      "name": "Scraper",
+      "detail": "10-880 - Scales",
+      "price": 93573,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 49,
+      "name": "Excavator",
+      "detail": "2 - Site Construction",
+      "price": 720161,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 50,
+      "name": "Bulldozer",
+      "detail": "15-700 - Heating, Venting and Air Conditioning",
+      "price": 460944,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 51,
+      "name": "Crawler",
+      "detail": "12-300 - Manufactured Casework",
+      "price": 915933,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Framing"
+    },
+    {
+      "id": 52,
+      "name": "Compactor",
+      "detail": "4-050 - Basic Masonry Materials and Methods",
+      "price": 956347,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 53,
+      "name": "Scraper",
+      "detail": "10-340 - Manufactured Exterior Specialties",
+      "price": 531665,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 54,
+      "name": "Scraper",
+      "detail": "13-165 - Aquatic Park Facilities",
+      "price": 775128,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Framing"
+    },
+    {
+      "id": 55,
+      "name": "Crawler",
+      "detail": "6-050 - Basic Wood and Plastic Materials and Methods",
+      "price": 144285,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Wall"
+    },
+    {
+      "id": 56,
+      "name": "Dump Truck",
+      "detail": "3-000 - General",
+      "price": 206544,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 57,
+      "name": "Skid-Steer",
+      "detail": "11-650 - Planetarium Equipment",
+      "price": 766995,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 58,
+      "name": "Skid-Steer",
+      "detail": "13-110 - Cathodic Protection",
+      "price": 764107,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 59,
+      "name": "Scraper",
+      "detail": "12-600 - Multiple Seating",
+      "price": 212106,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 60,
+      "name": "Trencher",
+      "detail": "6 - Wood and Plastics",
+      "price": 164326,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 61,
+      "name": "Excavator",
+      "detail": "2-310 - Grading",
+      "price": 888163,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 62,
+      "name": "Backhoe",
+      "detail": "13-900 - Fire Suppression",
+      "price": 706565,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Electrical"
+    },
+    {
+      "id": 63,
+      "name": "Crawler",
+      "detail": "2-917 - Soil Preparation",
+      "price": 298028,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 64,
+      "name": "Trencher",
+      "detail": "16-700 - Communications",
+      "price": 945420,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 65,
+      "name": "Skid-Steer",
+      "detail": "2-936 - Fertilizer",
+      "price": 72579,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 66,
+      "name": "Grader",
+      "detail": "10-550 - Postal Specialties",
+      "price": 484466,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 67,
+      "name": "Scraper",
+      "detail": "13-165 - Aquatic Park Facilities",
+      "price": 313682,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 68,
+      "name": "Scraper",
+      "detail": "13-175 - Ice Rinks",
+      "price": 856887,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 69,
+      "name": "Crawler",
+      "detail": "15-900 - HVAC Instruments and Controls",
+      "price": 353765,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 70,
+      "name": "Scraper",
+      "detail": "10-550 - Postal Specialties",
+      "price": 40142,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 71,
+      "name": "Bulldozer",
+      "detail": "1-580 - Project Identification",
+      "price": 600980,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Electrical"
+    },
+    {
+      "id": 72,
+      "name": "Backhoe",
+      "detail": "1-000 - Purpose",
+      "price": 360291,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 73,
+      "name": "Dump Truck",
+      "detail": "11-600 - Laboratory Equipment",
+      "price": 412556,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 74,
+      "name": "Trencher",
+      "detail": "4-600 - Corrosion-Resistant Masonry",
+      "price": 415592,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 75,
+      "name": "Bulldozer",
+      "detail": "2-625 - Retaining Wall Drainage Piping",
+      "price": 714572,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 76,
+      "name": "Crawler",
+      "detail": "17-020 - Insurance",
+      "price": 726305,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Wall"
+    },
+    {
+      "id": 77,
+      "name": "Trencher",
+      "detail": "2-782 - Brick Pavers",
+      "price": 13452,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 78,
+      "name": "Dump Truck",
+      "detail": "10-200 - Louvers and Vents",
+      "price": 662401,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Wall"
+    },
+    {
+      "id": 79,
+      "name": "Bulldozer",
+      "detail": "1-580 - Project Identification",
+      "price": 191563,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 80,
+      "name": "Dump Truck",
+      "detail": "6-100 - Rough Carpentry",
+      "price": 991605,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Electrical"
+    },
+    {
+      "id": 81,
+      "name": "Skid-Steer",
+      "detail": "1-013 - Project Coordinator",
+      "price": 842898,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 82,
+      "name": "Crawler",
+      "detail": "1-514 - Temporary Heating, Cooling and Ventilation",
+      "price": 853559,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 83,
+      "name": "Dragline",
+      "detail": "14-100 - Dumbwaiters",
+      "price": 355206,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 84,
+      "name": "Crawler",
+      "detail": "11-150 - Parking Control Equipment",
+      "price": 157932,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 85,
+      "name": "Crawler",
+      "detail": "5 - Metals",
+      "price": 175448,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Electrical"
+    },
+    {
+      "id": 86,
+      "name": "Grader",
+      "detail": "12-400 - Furnishings and Accessories",
+      "price": 617361,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 87,
+      "name": "Skid-Steer",
+      "detail": "1-904 - Hazardous Materials Removal and Disposal",
+      "price": 736236,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 88,
+      "name": "Skid-Steer",
+      "detail": "17 - Markup and Contingency",
+      "price": 174086,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Framing"
+    },
+    {
+      "id": 89,
+      "name": "Bulldozer",
+      "detail": "3 - Concrete",
+      "price": 543165,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Electrical"
+    },
+    {
+      "id": 90,
+      "name": "Grader",
+      "detail": "2-850 - Bridges/Footbridges",
+      "price": 362260,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 91,
+      "name": "Excavator",
+      "detail": "1-700 - Execution Requirements",
+      "price": 51860,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 92,
+      "name": "Scraper",
+      "detail": "6 - Wood and Plastics",
+      "price": 53754,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Framing"
+    },
+    {
+      "id": 93,
+      "name": "Excavator",
+      "detail": "2-780 - Clay Unit Pavers",
+      "price": 465414,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Wall"
+    },
+    {
+      "id": 94,
+      "name": "Scraper",
+      "detail": "14 - Conveying Systems",
+      "price": 680716,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 95,
+      "name": "Skid-Steer",
+      "detail": "11-500 - Industrial and Process Equipment",
+      "price": 580920,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Framing"
+    },
+    {
+      "id": 96,
+      "name": "Crawler",
+      "detail": "10-350 - Flagpoles",
+      "price": 571540,
+      "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+      "category": "Framing"
+    },
+    {
+      "id": 97,
+      "name": "Backhoe",
+      "detail": "10-300 - Fireplaces and Stoves",
+      "price": 955989,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 98,
+      "name": "Scraper",
+      "detail": "13-550 - Transportation Control Instrumentation",
+      "price": 458333,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Framing"
+    },
+    {
+      "id": 99,
+      "name": "Dragline",
+      "detail": "11-200 - Water Supply and Treatment Equipment",
+      "price": 933545,
+      "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+      "category": "Shafts"
+    },
+    {
+      "id": 100,
+      "name": "Compactor",
+      "detail": "14-300 - Escalators and Moving Walks",
+      "price": 994427,
+      "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+      "category": "Shafts"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Wall",
+      "img": "https://cf.shopee.co.id/file/54a83e3e24528dbbfe7e7cae52308d91"
+    },
+    {
+      "id": 2,
+      "name": "Shafts",
+      "img": "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/2/27/f6269f19-c118-42b9-b035-e8aa92567e64.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Framing",
+      "img": "https://images.tokopedia.net/img/cache/200-square/product-1/2017/8/30/3185061/3185061_92e85651-7d13-4af5-8275-43dee1ba58c6_480_480.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Electrical",
+      "img": "https://cf.shopee.co.id/file/54a83e3e24528dbbfe7e7cae52308d91"
+    }
+  ],
+  "cart": [
+    {
+      "id": 5,
+      "name": "Compactor",
+      "detail": "1-013 - Project Coordinator",
+      "price": 509017,
+      "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+      "category": "Framing",
+      "total": 1
+    }
+  ],
+  "transactions": [
+    {
+      "id": 448,
+      "cart": [
+        {
+          "id": 2,
+          "name": "Grader",
+          "detail": "10-240 - Grilles and Screens",
+          "price": 549552,
+          "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+          "category": "Shafts",
+          "total": 3
+        },
+        {
+          "id": 1,
+          "name": "Bulldozer",
+          "detail": "5 - Metals",
+          "price": 194223,
+          "img": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+          "category": "Electrical",
+          "total": 3
+        }
+      ],
+      "total": 2231325,
+      "timestamp": "5/5/2022, 5:50:43 AM"
+    },
+    {
+      "id": 588,
+      "cart": [
+        {
+          "id": 6,
+          "name": "Excavator",
+          "detail": "1-700 - Execution Requirements",
+          "price": 507317,
+          "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+          "category": "Wall",
+          "total": 2
+        },
+        {
+          "id": 8,
+          "name": "Grader",
+          "detail": "2-500 - Utility Services",
+          "price": 729304,
+          "img": "http://dummyimage.com/500x500.png/cc0000/ffffff",
+          "category": "Framing",
+          "total": 2
+        },
+        {
+          "id": 7,
+          "name": "Skid-Steer",
+          "detail": "9-400 - Terrazzo",
+          "price": 941975,
+          "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+          "category": "Shafts",
+          "total": 2
+        }
+      ],
+      "total": 4357192,
+      "timestamp": "5/5/2022, 5:53:18 AM"
+    },
+    {
+      "id": 951,
+      "cart": [
+        {
+          "id": 3,
+          "name": "Trencher",
+          "detail": "2-822 - Ornamental Metal Fences and Gates",
+          "price": 561591,
+          "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+          "category": "Wall",
+          "total": 4
+        },
+        {
+          "id": 6,
+          "name": "Excavator",
+          "detail": "1-700 - Execution Requirements",
+          "price": 507317,
+          "img": "http://dummyimage.com/500x500.png/dddddd/000000",
+          "category": "Wall",
+          "total": 3
+        },
+        {
+          "id": 5,
+          "name": "Compactor",
+          "detail": "1-013 - Project Coordinator",
+          "price": 509017,
+          "img": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
+          "category": "Framing",
+          "total": 1
+        }
+      ],
+      "total": 4277332,
+      "timestamp": "5/5/2022, 5:55:35 AM"
     }
   ]
 }
