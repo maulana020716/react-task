@@ -51,51 +51,54 @@ const Cart = ({
       <Offcanvas.Body>
         {cart.length > 0 ? (
           <>
-            {cart.map((product, index) => (
-              <Row className="justify-content-md-center" key={index}>
-                <Col xs={6} className="mb-3">
-                  <input
-                    type="checkbox"
-                    value={product.id}
-                    className="d-inline"
-                    onChange={() => deleteCart(product.id)}
-                    checked
-                  />
-                  <Image
-                    src={product.img}
-                    thumbnail={true}
-                    className="d-inline ml-2"
-                    style={{ width: 150, height: "auto", marginLeft: 8 }}
-                  />
-                </Col>
-                <Col xs={6} className="text-center">
-                  <h3 className="mb-3">{product.name}</h3>
-                  <h3 className="mb-4">
-                    <CurrencyFormat
-                      value={product.price}
-                      displayType={"text"}
-                      thousandSeparator={true}
-                      prefix={"Rp"}
+            {cart
+              .slice(0)
+              .reverse()
+              .map((product, index) => (
+                <Row className="justify-content-md-center" key={index}>
+                  <Col xs={6} className="mb-3">
+                    <input
+                      type="checkbox"
+                      value={product.id}
+                      className="d-inline"
+                      onChange={() => deleteCart(product.id)}
+                      checked
                     />
-                  </h3>
-                  <>
-                    <Button
-                      variant="danger"
-                      onClick={() => subsFromCart(product)}
-                    >
-                      <HiMinus />
-                    </Button>
-                    <Button variant="light">{product.total}</Button>
-                    <Button
-                      variant="primary"
-                      onClick={() => addToCart(product)}
-                    >
-                      <HiPlus />
-                    </Button>
-                  </>
-                </Col>
-              </Row>
-            ))}
+                    <Image
+                      src={product.img}
+                      thumbnail={true}
+                      className="d-inline ml-2"
+                      style={{ width: 150, height: "auto", marginLeft: 8 }}
+                    />
+                  </Col>
+                  <Col xs={6} className="text-center">
+                    <h3 className="mb-3">{product.name}</h3>
+                    <h3 className="mb-4">
+                      <CurrencyFormat
+                        value={product.price}
+                        displayType={"text"}
+                        thousandSeparator={true}
+                        prefix={"Rp"}
+                      />
+                    </h3>
+                    <>
+                      <Button
+                        variant="danger"
+                        onClick={() => subsFromCart(product)}
+                      >
+                        <HiMinus />
+                      </Button>
+                      <Button variant="light">{product.total}</Button>
+                      <Button
+                        variant="primary"
+                        onClick={() => addToCart(product)}
+                      >
+                        <HiPlus />
+                      </Button>
+                    </>
+                  </Col>
+                </Row>
+              ))}
             <Row>
               <Col xs={6} className="mb-3">
                 <h3>Total</h3>

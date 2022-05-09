@@ -1,3 +1,4 @@
+import { Container, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -6,10 +7,10 @@ import Search from "./components/Search";
 import Carousels from "./components/Carousels";
 import Filter from "./components/Filter";
 import Navbars from "./components/Navbars";
-
-import { Container } from "react-bootstrap";
 import Cart from "./components/Cart";
 import Transactions from "./components/Transactions";
+// import LoginButton from "./components/LoginButton";
+// import LogoutButton from "./components/LogoutButton";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -79,7 +80,6 @@ function App() {
   };
 
   const addTransact = async (transacts) => {
-    // console.log(transacts);
     const res = await fetch("http://localhost:5000/transactions", {
       method: "POST",
       headers: {
@@ -89,15 +89,12 @@ function App() {
     });
     var data = await res.json();
     setTransact([...transact, data]);
-    transacts.cart.reduce(
-      (n = "", { id }) =>
-        fetch(`http://localhost:5000/cart/${id}`, {
+    transacts.cart.map(
+      async (cart) =>
+        await fetch(`http://localhost:5000/cart/${cart.id}`, {
           method: "DELETE",
-        }),
-      ""
+        })
     );
-    // console.log(ids.toString());
-
     setCart([]);
   };
 
@@ -113,7 +110,6 @@ function App() {
         body: JSON.stringify(product),
       });
       var data = await res.json();
-      data.total = 1;
       setCart([...cart, data]);
     } else {
       const addToTotal = await fetchCart(product.id);
@@ -169,6 +165,8 @@ function App() {
 
   return (
     <Router>
+      {/* <LoginButton />
+      <LogoutButton /> */}
       <Navbars onCartClick={handleShow} onTransactClick={handleShow1} />
       <Container>
         <Routes>
@@ -179,9 +177,7 @@ function App() {
                 <Search onChangeVal={fetchTasksSearch} />
                 <Carousels />
                 <Filter categories={categories} onFilter={fetchTaskFilter} />
-                {/* {showAddTask && <AddTask onAdd={addTask} />} */}
-
-                <div className="row">
+                <Row>
                   <h3
                     style={{
                       marginBottom: 10,
@@ -196,7 +192,6 @@ function App() {
                     show1={show1}
                     handleClose1={handleClose1}
                     placement={"end"}
-                    name="end"
                     transact={transact}
                   />
                   <Cart
@@ -212,9 +207,9 @@ function App() {
                   {products.length > 0 ? (
                     <Products products={products} onAdd={addToCart} />
                   ) : (
-                    "No Tasks to show"
+                    "No Products to show"
                   )}
-                </div>
+                </Row>
               </>
             }
           />

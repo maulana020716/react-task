@@ -1,10 +1,9 @@
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Col } from "react-bootstrap";
 import CurrencyFormat from "react-currency-format";
 
 const Product = ({ product, onAdd }) => {
   return (
-    <div className="col-md-3 col-6" style={{ marginBottom: 10 }}>
-      {/* <Link to={`/detail/${product.id}`}> */}
+    <Col xs={6} className="mb-3">
       <Card>
         <Card.Img variant="top" src={product.img} />
         <Card.Body>
@@ -22,8 +21,7 @@ const Product = ({ product, onAdd }) => {
           </Button>
         </Card.Body>
       </Card>
-      {/* </Link> */}
-    </div>
+    </Col>
   );
 };
 

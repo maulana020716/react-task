@@ -14,7 +14,7 @@ const Filter = ({ categories, onFilter }) => {
       {categories.map((category, index) => (
         <div
           className="col-3"
-          key={index}
+          key={category.id}
           onClick={() => onFilter(category.name)}
         >
           <Card>

@@ -5,7 +5,7 @@ const Products = ({ products, onAdd, onToggle }) => {
     <>
       {products.map((product, index) => (
         <Product
-          key={index}
+          key={product.id}
           product={product}
           onAdd={onAdd}
           onToggle={onToggle}
